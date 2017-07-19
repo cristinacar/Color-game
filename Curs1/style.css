@@ -1,0 +1,32 @@
+html {
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    color: darkmagenta;
+    font-family: Georgia;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+p {
+    text-align: justify;
+}
+
+div {
+    width: 83%;
+    float: left;}
+
+#footer {
+    text-align: center;
+    color: dimgray
+}
+
+
+table {
+    border-collapse: collapse;
+}
