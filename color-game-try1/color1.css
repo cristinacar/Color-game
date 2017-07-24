@@ -1,0 +1,155 @@
+body {
+  font-family: Fira Sans;
+  font-weight: 300;
+  margin: 0;
+  
+}
+
+/*Header*/
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #00A69C;
+  color: #FFFFFF;
+  
+}
+
+.header h1:nth-child(2) {
+  font-size: 60px;
+  letter-spacing: 4px;
+}
+
+.header h1 {
+  font-weight: 300;
+  font-size: 30px;
+  padding: 10px 0;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+
+/*MIDDLE*/
+.middle-content {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+/*BUTTON*/
+
+#start {
+  
+  background-color: white;
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: 1px solid #00a79d;
+  color: #3c3c3c;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+#start:hover {
+  background-color: #00a79d;
+  color: white;
+}
+
+/*CIRCLES*/
+
+.container {
+  max-width: 660px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.color-circle {
+  width: 200px;
+  height: 200px;
+  background-color: #00a79d;
+  margin: 10px;
+  border-radius: 100%;
+}
+
+.color-circle:nth-of-type(1) {
+  background-color: #394406;
+}
+
+.color-circle:nth-of-type(2) {
+  background-color: #7b9b4a;
+}
+
+.color-circle:nth-of-type(3){
+  background-color: #b4c889;
+}
+
+.color-circle:nth-of-type(4){
+  background-color: #7f8286;
+}
+
+.color-circle:nth-of-type(5) {
+  background-color: #434041;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 0;
+  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 167, 157, .82)), to(rgba(0, 167, 157, .82))), url('images/hero.jpg');
+  
+  background-image: linear-gradient(180deg, rgba(0, 167, 157, .82), rgba(0, 167, 157, .82)), url('images/hero.jpg');
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  
+  
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.footer p {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
