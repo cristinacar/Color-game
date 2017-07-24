@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>fieldset, select </title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>Choose</legend>
+      <label>Apple</label>
+        <input type="checkbox" name='fruit' value='apple'>
+      <label>Orange</label>
+        <input type="checkbox" name='fruit' value='orange'>
+    </fieldset>
+    <input type="submit" value='Submit'>
+    
+    <select name="first-select" id="select">
+      <option value="kiwi">rrr</option>
+      <option value='banana'>jjj</option>
+      <option value="fruit3">what</option>
+    </select>
+    
+    <input type="text" id='input1' placeholder='datalist' list='list1' pattern='orange|banana|apple'>
+    <datalist id='list1'>
+      <option>orange</option>
+      <option>banana</option>
+      <option>apple</option>
+    </datalist>
+    
+    <br>
+    
+    <textarea name="textarea1" id="textarea1" cols="40" rows="5" minlength=5>
+      
+    </textarea>
+  </form>
+</body>
+</html>

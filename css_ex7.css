@@ -1,0 +1,42 @@
+body {
+  /*background-image: url('dog.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  
+}
+
+h1 {
+  color: black;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li:first-child {
+  border-top: 2px solid black;
+}
+
+ul li {
+  font-size: 22px;
+  font-style: italic;
+  text-align: center;
+  list-style-type: none;
+  width: 200px;
+  margin: 0 auto;
+  color: blue;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 5px;
+}
+
+a[href='index.html'] {
+  color: red;
+}
+
+li:nth-child(even) {
+  color: green;
+}
+
+
