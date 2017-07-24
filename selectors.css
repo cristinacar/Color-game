@@ -31,7 +31,7 @@ p{
 
 
 /*Make all inputs have a 3px red border*/
-input *{
+input{
 	border: 3px solid red;
 }
 
