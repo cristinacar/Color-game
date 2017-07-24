@@ -42,29 +42,27 @@ input {
 }
 
 /*Make all the <p>'s that are nested inside of divs 25px font(font-size: 25px)*/
-p+div{
+div p {
 	font-size: 25px;
 }
-
 /*Make only inputs with type 'text' have a gray background*/
 input[type="text"] {
    background-color: gray;
 }
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
-.div3 p{
-	background-color: pink;
+div:nth-of-type(3) p {
+	background: pink;
 }
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-.div3 #p2{
+div:nth-of-type(3) p:nth-of-type(2) {
 	border: 5px solid white;
 }
-
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
-.div3 em{
-	font:20px;
-	color:white;
+div:nth-of-type(3) em {
+	color: white;
+	font-size: 20px; 
 }
 
 /*BONUS CHALLENGES*/
