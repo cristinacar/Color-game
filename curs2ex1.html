@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!--  this is metadata  -->
+<head>
+	<title>First title</title>
+</head>
+<body>
+	<h1>Register</h1>
+<form>
+	<label for="First name">First Name</label>
+	<input type="text" name="First Name" id="fn" required placeholder="John">
+	<label for="Last Name"> Last Name</label>
+	<input type="text" name="Last Name" id="ln" required placeholder="Smith"> <br>
+	<input type="radio" name="gender" id="male" value="male"> Male
+	<input type="radio" name="gender" id="female" value="female" checked="checked"> Female
+	<input type="radio" name="gender" id="other" value="other"> Other <br>
+	<label for="email"> Email</label>
+	<input type="email" name="email" required placeholder="your email"> 
+	<label for="password"> Password</label>
+	<input type="password" name="pass" placeholder="your password" minlength="5" maxlength="10"> <br>
+	<label>Birthday</label>
+	<select name="Month">
+		<option selected disabled>Month</option>
+		<option>ian</option>
+		<option>feb</option>
+		<option>mar</option>
+		<option>apr</option>
+		
+	</select>
+	<select name="Day">
+		<option selected disabled>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+	</select>
+	<select name="Year">
+		<option selected disabled>Year</option>
+		<option>1991</option>
+		<option>2000</option>
+		<option>2001</option>
+		<option>2002</option>
+	</select> <br>
+	<label>I agree to the terms and conditions</label>
+	<input type="checkbox" name="I agree"> <br>
+	<input type="submit" name="submit">
+
+</form>
+</body>
+</html>
