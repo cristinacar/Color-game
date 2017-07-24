@@ -1,0 +1,14 @@
+body{
+	color:blue;
+}
+
+* {
+	color:blue;
+}
+p+a{
+	color:red;
+}
+
+li:nth-of-type(3) {
+   border: 1px solid black;
+}

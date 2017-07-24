@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<label>First Name:</label>
+	<input type="text" name="firstname" placeholder="John">
+	<label>Last Name:</label>
+	<input type="text" name="lastname" placeholder="Smith"><br>
+	<label for="Choice1">Male</label>
+	<input type="radio" name="gender" id="Choice1" value="male">
+	<label for="Choice2">Female</label>
+	<input type="radio" name="gender" id="Choice2" value="female">
+	<label for="Choice3">Other</label>
+	<input type="radio" name="gender" id="Choice3" value="other"><br>
+	<label>Email:</label>
+	<input type="email" name="email" placeholder="your email" required>
+	<label>Password:</label>
+	<input type="Password" name="Password" placeholder="your Password"><br>
+	<label>Birthday:</label>
+	<input type="text" id="in1" list="list1" name="Month" placeholder="Month">
+	<datalist for id="list1" >
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>Mar</option>
+		<option>Apr</option>
+		<option>May</option>
+		<option>Jun</option>
+		<option>Jul</option>
+		<option>Aug</option>
+		<option>Sep</option>
+		<option>Oct</option>
+		<option>Nov</option>
+		<option>Dec</option>		
+	</datalist>
+	<input type="number" id="in2" list="list2" name="Day" placeholder="Day" min="1" max="31">
+
+	<input type="number" id="in3" list="list3" name="Year" placeholder="Year" min="1980" max="2017">
+	<datalist for id="list3" >
+		<option>2014<option>
+		<option>2015<option>
+		<option>2017</option>
+	</datalist>
+	<br>
+	<label>I agree to the conditions</label>
+	<input type="checkbox" name="agree" required><br>
+	<input type="submit" name="submit" value="Register" >
+</form>
+
+</body>
+</html>
