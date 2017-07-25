@@ -116,6 +116,24 @@ body {
   background-color: #434041;
 }
 
+.color-circle {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.color-circle:hover {
+  
+  -webkit-transform: scale(1.1);
+  
+  transform: scale(1.1);
+}
+
+.key1 {
+  
+  -webkit-transform: scale(1.1);
+  
+  transform: scale(1.1);
+}
 
 
 /*FOOTER*/
@@ -150,6 +168,6 @@ body {
   color: white;
 }
 
-footer a {
+.footer a {
   text-decoration: none;
 }
