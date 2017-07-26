@@ -1,0 +1,27 @@
+html {
+  font-size: 10px;
+}
+
+p{
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: justify;
+  /*
+  text-decoration: line-through;
+  text-decoration-color: darkorange;
+  text-decoration-style: wavy;
+  */
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-family: 'Trebuchet MS';
+  font-size: 2.5rem;
+}
+
+span{
+  font-size: 1.666rem;
+}

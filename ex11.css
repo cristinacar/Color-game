@@ -1,0 +1,49 @@
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: orange;
+  height: 100px;
+}
+
+nav {
+  background: blue;
+  height: 50px;
+}
+
+main {
+  background: red;
+  height: 300px;
+}
+
+section {
+  width: 70%;
+  float: left;
+  background: brown;
+}
+
+section header {
+  height: 30px;
+  background: green;
+  
+}
+
+article {
+  background: pink;
+  height: 200px;
+}
+
+aside {
+  height: 100px;
+  background-color: cadetblue;
+  width: 30%;
+  float: left;
+}
+
+
+footer {
+  height: 50px;
+  background-color: darkmagenta;
+}
