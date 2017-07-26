@@ -55,3 +55,91 @@ DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
 
 
 /*Make the <a> element's that have been visited gray */
+
+body {
+      background-color: #bdc3c7;
+
+}
+
+ h1 {
+
+	color: #9b59b6;
+}
+
+h2 {
+	color:orange;
+}
+
+li{
+	color: #0000ff;
+}
+
+p{
+	background-color: yellow ;
+}
+
+input  {
+
+	border:3px solid red;
+}
+
+ .hello {
+
+	background-color:white; 
+}
+
+#special {
+
+	border: 2px solid rgb(0,0,139);
+}
+
+div > p {				/* paragrafele(p) care sunt incluse in div */
+
+	font-size: 25px;
+
+}
+
+input[type="text"]{
+	background-color: gray;
+}
+
+
+div:nth-of-type(3) >p {         /* paragrafele din interiorul celui de-al 3 lea div  */
+	background-color: pink;
+}
+
+
+
+div p:nth-of-type(0n+2) {
+	border: 5px solid white;
+}
+
+div:nth-of-type(3) >p {         /*  paragrafele din al 3lea div  sunt scrise cu italic si font de 20	  */
+
+	color: white;
+	font-size: 20px;
+}
+
+input:checked {
+	margin-left: 100px;
+}
+
+
+
+label{
+	text-transform: uppercase;          
+}
+
+#special::first-letter{      /* ::first-letter   --->standard	*/
+	color:green;
+	font-size: 100px;
+}
+
+
+h1:hover {
+	color:blue;
+}
+
+a:visited {
+	color: gray;
+}
