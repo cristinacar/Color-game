@@ -2,7 +2,6 @@ body {
   font-family: Fira Sans;
   font-weight: 300;
   margin: 0;
-  
 }
 
 /*Header*/
@@ -91,9 +90,32 @@ body {
 .color-circle {
   width: 200px;
   height: 200px;
-  background-color: #00a79d;
   margin: 10px;
   border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.color-circle:after {
+  background: #fff;
+  content: "";
+  height: 300px;
+  left: -90px;
+  opacity: 0.15;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 60px;
+  z-index: -10;
+}
+
+.color-circle:hover:after {
+  left: 130%;
+  -webkit-transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 650ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .color-circle:nth-of-type(1) {
@@ -114,6 +136,10 @@ body {
 
 .color-circle:nth-of-type(5) {
   background-color: #434041;
+}
+
+.color-circle:nth-of-type(6){
+  background-color: #00a79d;
 }
 
 .color-circle {
@@ -146,10 +172,9 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 50px 0;
-  
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 167, 157, .82)), to(rgba(0, 167, 157, .82))), url('images/hero.jpg');
-  
   background-image: linear-gradient(180deg, rgba(0, 167, 157, .82), rgba(0, 167, 157, .82)), url('images/hero.jpg');
+  background-position: 50% 45%;
   position: relative;
   bottom: 0px;
   width: 100%;
