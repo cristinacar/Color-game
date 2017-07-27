@@ -1,0 +1,19 @@
+html{
+	font-size: 10px;
+}
+h1{
+	font-family: "Lemonada";
+	font-size: 5rem;
+	text-align: right;
+}
+p{
+	font-family: "Indie Flower";
+	font-size: 2rem;
+	font-weight: "400i";
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: underline black solid;
+}
+span{
+	font-size: 2rem;
+}

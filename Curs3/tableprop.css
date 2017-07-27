@@ -1,0 +1,23 @@
+
+td{
+	width: 100px;
+	height: 100px;
+}
+.verticalBorder{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+.horizontalBorder{
+	border-top:2px solid black;
+	border-bottom: 2px solid black;
+}
+
+table{
+	margin: auto;
+}
+h1{
+	text-align: center;
+}
+h3{
+	text-align: center;
+}

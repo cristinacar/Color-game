@@ -1,0 +1,37 @@
+#container {
+	width: 80%;
+	height: 50px;
+}
+header{
+background-color: grey;
+height: 50px;
+}
+main{
+	background : pink;
+	height: : 500px;
+}
+section{
+	background: brown;
+	width: 70%;
+	float: left;
+}
+section header{
+	background: green;
+	height: : 30px;
+}
+article{
+	background: red;
+	height : 200px;
+}
+
+aside {
+	background: blue;
+	width: 30%;
+	height: 300px;
+	float: left;
+}
+
+footer{
+	background: yellow;
+	height: 20px;
+}
