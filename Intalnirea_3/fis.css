@@ -1,0 +1,33 @@
+html {
+	font-size: 12px;
+}
+
+h1 {
+	font-family: "Josefin Sans";
+}
+
+p {
+	font-family: "Playfair Display";  
+
+}
+
+h1 {
+	font-size:5rem;
+}
+
+span {
+
+	font-size: 2rem;
+}
+
+p {
+	line-height:5;
+	font-weight: 400i;
+	text-decoration: underline black solid;
+}
+
+/*Text align */
+
+h1 {
+	text-align: center;
+}

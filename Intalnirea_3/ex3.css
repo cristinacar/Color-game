@@ -1,0 +1,45 @@
+#container {
+	width: 80%;
+}
+header {
+	background-color: orange;
+	height: 100px;
+}
+nav {
+	background:grey;
+	height: 50px;
+}
+
+main {
+	background:pink;
+	height: 300px
+}
+
+section {
+	background:brown;
+	width: 70%;
+	float: left;
+}
+
+section header {
+	background-color: green;
+	height: 30px;
+}
+
+article {
+	background-color: red;
+	height: 200px;
+}
+
+aside {
+	background-color: blue;
+	width:30%;
+	float:left;
+	height: 300px;
+
+}
+
+footer {
+	background-color: darkorchid;
+	height: 20px;
+}
