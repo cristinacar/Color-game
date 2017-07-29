@@ -1,0 +1,32 @@
+
+body{
+color: rgba(214, 170, 74, .4);
+/*background-image: url(http://www.i.imgur.com/ZOcLM7h.jpg);
+background-repeat: no-repeat;*/
+}
+
+li{
+	color: blue;
+}
+li a{
+	color: red;
+}
+.special{
+	color: green;
+}
+
+li:nth-of-type(3){
+	color: black;
+}
+
+p+a{
+	color: #9e04d6;
+}
+
+p{
+	color:purple;
+}
+
+a[href="#"]{
+	color: blue;
+}

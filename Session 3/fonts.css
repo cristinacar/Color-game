@@ -1,0 +1,58 @@
+html{
+	
+	/*font-family: 'Playfair Display', serif;*/
+
+}
+body{
+	background-color: rgba(214, 170, 74, .4);
+	text-align: center;
+}
+h1{
+	/*font-family: "Josefin Sans";   /* used google fonts */*/
+	font-size: 5rem;
+}
+
+p{
+	/*font-family: "Playfair Display"; /* used google fonts */*/
+	font-size: 2rem;
+	font-weight: bold;
+	/*font-weight: 100 - 800;*/
+	line-height: 1.7em;
+	text-decoration:  wavy underline ; 
+}
+span{
+	font-size: 2.5rem;
+}
+table.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table{
+	margin-right: 50%;
+	
+}
+table.center{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table tbody tr td{
+	width: 100px;
+	height: 100px;
+}
+table tbody tr:nth-of-type(2) td{
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+table tbody td:nth-of-type(2){
+	border-right:1px solid #000;
+	border-left:1px solid #000;
+	margin-top: none;
+}
+/*
+table tbody td:nth-of-type(3){
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	margin-top: none;
+}*/

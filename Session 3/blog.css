@@ -1,0 +1,33 @@
+body{
+	width: 70%;
+	margin-left: 13%;
+	border: 15px solid gray;
+	padding-top: 50px;
+	padding-left: 70px;
+	padding-right: 40px;
+	height:  1024px;
+}
+
+h2{
+	color: blue;
+	font-family: 'Indie Flower', cursive;
+}
+p{
+	font-family: 'Artifika', serif;
+}
+
+h1{
+	font-family: 'Artifika', serif;
+
+}
+hr{
+
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));*/
+	color: black;
+	box-shadow: 0 0 10px 1px gray;
+}
+
+.pWithMargin{
+	border-left: 3px solid gray;
+	padding-left: 5px;
+}

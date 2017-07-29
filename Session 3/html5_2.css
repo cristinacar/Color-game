@@ -1,0 +1,35 @@
+div{
+	border: 1px solid green;
+	width: 150px;
+}
+
+#div1{
+	border: 3px solid gray;
+	width: 200px;
+	height: 200px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 15px;
+
+	background: linear-gradient(150deg, red, green);
+
+}
+#div2{
+	border: 3px solid gray;
+	width: 200px;
+	height: 200px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 15px;
+	background: linear-gradient(150deg, red, yellow, green);
+}
+
+#div3{
+	border: 3px solid gray;
+	width: 200px;
+	height: 200px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 15px;
+	/*background: radial-gradient(red 30%, green);*/
+	text-shadow: 20px 10px 10px black;
+	box-shadow: 0 -20 black;
+}
+

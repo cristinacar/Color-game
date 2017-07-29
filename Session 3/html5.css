@@ -1,0 +1,41 @@
+#container{
+	width: 80%;
+}
+header{
+	background-color: orange;
+	height: 200px;
+}
+
+nav{
+	background-color: gray;
+	height: 50px;
+}
+main{
+	background-color: #e00b39;
+}
+
+section{
+	width: 70%;
+	background-color: #e00b39;
+	height: 300px;
+	float: left;
+}
+section header{
+	background-color: green;
+	height:30px;
+}
+article{
+	background-color: red;
+	height: 200px;
+}
+
+aside{
+	width: 30%;
+	height: 300px;
+	float: left;
+	background-color: blue;
+}
+footer{
+	background-color: #453454;
+	height: 20px; 
+}
