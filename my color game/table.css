@@ -1,0 +1,57 @@
+table {
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+td {
+	width: 200px;
+	height: 200px;
+}
+
+#color1 {
+	background: blue;
+}
+
+#color2 {
+	background: green;
+}
+
+#color3 {
+	background: yellow;
+}
+
+#color4 {
+	background: red;
+}
+
+#color5 {
+	background: gray;
+}
+
+#color6 {
+	background: purple;
+}
+
+#color7 {
+	background: silver;
+}
+
+#color8 {
+	background: brown;
+}
+
+#color9 {
+	background: pink;
+}
+
+#color10 {
+	background: white;
+}
+
+#color11 {
+	background: orange;
+}
+
+#color12 {
+	background: violet;
+}

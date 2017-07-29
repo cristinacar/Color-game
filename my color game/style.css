@@ -1,0 +1,16 @@
+@import "table.css";
+@import "header.css";
+@import "main.css";
+
+body {
+	background-image: url("http://images.nailsmag.com/post/M-na0211stylenf-color.jpg");
+}
+
+* {
+	font-family: sans-serif;
+}
+
+footer h4 {
+	text-align: center;
+	margin-bottom: 0px;
+}

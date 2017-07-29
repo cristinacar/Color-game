@@ -1,0 +1,12 @@
+#instructions {
+	width: 500px;
+	height: 160px;
+	padding-left: 50px;
+}
+
+#instructions div {
+	width: 400px;
+	height: 160px;
+	background-color: blue;
+	opacity: 0.8;
+}
