@@ -1,0 +1,168 @@
+
+body{
+	width: 100%;
+	margin: 0 auto;
+	font-size: 18px;
+	background-attachment: fixed;
+}
+
+#background{
+	background-image: url(bg.jpg);
+	width: 100%;
+	height: 1450px;
+	opacity: 0.3;
+	position: absolute;
+	background-attachment: fixed;
+	z-index: 0;
+	margin:0 auto;
+}
+
+#container{
+	position: relative;
+	width: 100%; 
+}
+header{
+	width: 100%;
+	padding-top: 2.39%;
+	padding-bottom: 1%;
+	text-align: center;
+	background: #232526;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fffce2, #fffefc, #fffce2);  
+	background: linear-gradient(to right, #fffce2, #fffefc, #fffce2);
+	background: -moz-linear-gradient(to right, #fffce2, #fffefc, #fffce2);
+	box-shadow: 0px 0px 30px #436d39;
+	transition: 0.35s;
+
+	
+}
+
+header:hover{
+	box-shadow: 0px 0px 30px #ccc;
+}
+
+nav{
+	position: relative;
+	z-index: 1;
+	margin-top: 0;
+	width: 100%;
+	height: 55px;
+	background-color: #436d39;
+	opacity: 0.9;
+
+}
+
+#navContent{
+	width: 80%;
+	margin-left: 10%;
+}
+.navButtons{
+	border-style: solid;
+	border-color: #c6c6c6;
+	background: #c6c6c6;
+	margin-left: 3%;
+	padding: 16.5px 30px 14.3px 30px;
+	font-size: 16px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	transition: 0.3s;
+	font-family: 'Fjalla One', 'Georgia', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#firstButton{
+	margin-left: 0;
+}
+
+.navButtons:hover{
+	font-size: 17px;
+	padding: 16.5px 37px 14.3px 37px;
+	background-color: orange;
+	border-style: solid;
+	border-color: orange;
+}
+
+main{
+	text-align: center;
+	background-color: #fffded;
+	position: relative;
+	width: 74%;
+	border: 1px solid #fff;
+	height: 800px;
+	margin:0 auto;
+	margin-top: 90px;
+	margin-bottom: 100px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 2% 3% 5% 3%;
+}
+
+.squareSection{
+	width: 71%;
+	margin-left: 5%;
+	height: auto;
+	/*border: 1px solid #000;*/
+	padding: 1% 9% 1% 9%; 
+	float: left;
+}
+
+.square{
+	width: 180px;
+	height: 180px;
+	/*border: 1px solid #0a0;*/
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	margin: 5% 6% 2% 8%;
+	float: left;
+	transition: .3s;
+}
+
+.square:hover{
+   	transform: scale(1.1);
+   	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	box-shadow: 0px 0px 40px #000;
+}
+
+
+#firstSquare{
+	background-color: #532966;
+}
+
+#secondSquare{
+	background-color: #11205b;
+}
+#thirdSquare{
+	background-color: #267746;
+}
+#_4thSquare{
+	background-color: #efeb13;
+}
+#_5thSquare{
+	background-color: #d61d1d;
+}
+#_6thSquare{
+	background-color: #ff7700;
+}
+
+
+footer{
+	text-align: center;
+	width: 100%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #436d39;
+}
+
+.title{
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+	color: #294423;
+}
+h2{
+	font-family: 'Indie Flower', cursive;
+}
+#rgbTitle{
+	margin-top: -2%;
+	font-size: 15px;
+}
