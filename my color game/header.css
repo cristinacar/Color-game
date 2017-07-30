@@ -15,16 +15,6 @@ h2 {
   margin-top: 0px;
 }
 
-#difficulty {
-  float: left;
-  font-size: 30px;
-}
-
-#navbar {
-  width: 400px;
-  margin: 0 auto;
-}
-
 nav {
   background-color: #010c14;
   opacity: 0.7;
