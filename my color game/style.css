@@ -3,7 +3,9 @@
 @import "main.css";
 
 body {
-	background-image: url("http://images.nailsmag.com/post/M-na0211stylenf-color.jpg");
+	background-image: url("http://4.bp.blogspot.com/-6AWa5PNriK8/TnGxx5dyJ2I/AAAAAAAAA8k/XHcRqKtxL2k/s1600/4018214944_16a30cf1b2_o.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 * {
@@ -13,4 +15,5 @@ body {
 footer h4 {
 	text-align: center;
 	margin-bottom: 0px;
+	color: white;
 }
