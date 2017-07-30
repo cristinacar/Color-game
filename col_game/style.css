@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Fredoka+One|Indie+Flower|VT323');
+@import url('https://fonts.googleapis.com/css?family=Righteous|Bree+Serif|Fredoka+One|VT323');
 
 body, div, span, applet, object, iframe,
 h1, table, caption, tbody, tfoot, thead, tr, th, td,
@@ -12,7 +12,6 @@ html{
   width: 100%;
   margin: 0 auto;
   background-color: #00DBDE;
-  background-image: -webkit-linear-gradient(left, #00DBDE 0%, #FC00FF 100%);
   background-image: -o-linear-gradient(left, #00DBDE 0%, #FC00FF 100%);
   background-image: linear-gradient(to right, #00DBDE 0%, #FC00FF 100%);
   padding: 0;
@@ -25,7 +24,36 @@ h1.clgTitle{
   font-family: 'Bree Serif', serif;
   letter-spacing: 5px;
   text-align: center;
-  color: rgb(0, 100, 0);
+  color: rgb(244, 208, 63);
+
+  text-shadow: 0 0 1px black;
+}
+
+h2{
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  text-shadow: 0 0 10px black;
+}
+
+span.redR{
+  color: rgb(255,0,0);
+  font-size: 1.3em;
+}
+
+span.greenG{
+  color: rgb(0, 255, 0);
+  font-size: 1.3em;
+}
+
+span.blueB{
+  color:rgb(0, 0, 255);
+  font-size: 1.3em;
+}
+
+h2 span.valRGB{
+  letter-spacing: 10px;
+  color: rgb(255, 255, 255);
 }
 
 ul{
@@ -100,6 +128,8 @@ td:active{
 }
 
 footer{
+  line-height: 2;
+  font-family: 'Fredoka One', cursive;
   user-select: none;
   text-align: center;
   text-shadow: 1px 0 0 gray;
