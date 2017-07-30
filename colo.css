@@ -1,0 +1,71 @@
+header {
+	
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 26px;
+	font-style: italic;
+	background-color: rgb(223,177,32);
+	text-shadow: 2px 2px 6px #FF0000;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+
+
+
+}
+
+footer {
+	text-align: center;
+}
+
+
+aside{
+	background-image: url("https://www.luxresorts.com/media/2601563/Maldives_Hotels_Resorts_LUX_Maldives_Spa_WellBeing.jpg");
+	background-size: 370px 370px;
+	
+}
+
+
+#first{
+	outline-style: solid;
+}
+
+#last{
+	outline-style: dotted;
+}
+
+
+section {
+	background-color: rgb(255,255,255);
+}
+
+
+table{
+	margin:0 auto;
+	
+}
+
+div{
+
+	border-radius: 10px;
+
+}
+
+.button {
+    background-color: rgb(3,22,56); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
