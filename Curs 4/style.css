@@ -1,0 +1,53 @@
+body{
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+}
+
+div.circle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+div.One{
+    background-color: aqua;
+}
+
+div.Two{
+    background-color: brown;
+}
+
+div.Three{
+    background-color: crimson;
+}
+
+form.secondForm {
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+form.secondForm input[type="button"]{
+  color: lightGreen;
+  font-size: 1.05em;
+  text-shadow: 0 0 1px black;
+}
+
+form.secondForm:hover{
+  transform: scale(1.2);
+  transition: all ease-in-out 1s;
+  box-shadow: 0 0 5px black;
+}
+
+form.secondForm:active{
+  transform: scale(0.9);
+  transition: all ease-in-out 1s;
+}
