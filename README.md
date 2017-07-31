@@ -1,9 +1,8 @@
 # COLOR GAME
 
-	- This is a very easy to play Color Game.
-		The way you play it is you are given an RGB value, and depending on
-		the mode you choose you will be displayed a number of squares. You
-		have to correctly guess which square matches the RGB value. 
+	This is a very easy to play Color Game.
+	The way you play it is you are given an RGB value, and depending on the mode you choose you will
+	be displayed a number of squares. You have to correctly guess which square matches the RGB value. 
 
 ### First steps:
 
