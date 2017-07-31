@@ -1,68 +1,59 @@
 function loadColors(){
-	// var rgb=document.getElementById("rgbColor").innerHTML;
-	// Genereaza culoare rgb noua
+	//setTransform seteaza div-urile sa fie animate cand mouse-ul este deasupra
 	setTransform();
 	document.getElementById("news").innerHTML="Good luck !";
-	var rgb="";
-		rgb+="rgb("
-		for(j=1;j<=3;j++){
-			var c=Math.floor((Math.random() * 255) + 0);
-			rgb+=c;
-			if(j==3)
-			{
-				rgb+=")"
-			}
-			else {rgb+=","}
-		}
+	var rgb=generateRGB();
 	document.getElementById("rgbColor").innerHTML=rgb;
 	
+	//var colors este un array cu toate cele 6 culori generate, printre care si cea cu care trebuie sa fie 'match'
 	var colors=new Array();
 	colors.push(rgb);
+	var rgbNew;
 	for(i=1;i<=5;i++){
-		var rgbNew="";
-		rgbNew+="rgb("
-		for(j=1;j<=3;j++){
-			var c=Math.floor((Math.random() * 255) + 0);
-			rgbNew+=c;
-			if(j==3)
-			{
-				rgbNew+=")"
-			}
-			else {rgbNew+=","}
-		}
-		//alert(rgbNew);
+		rgbNew=generateRGB();
 		colors.push(rgbNew);
 	}
-	// alert(colors);
-	var rightColor=Math.floor((Math.random() * 6) + 1);
-	var divId="box-"; divId+=rightColor;
-	var div=document.getElementById(divId);
-	div.style.backgroundColor = colors[0]; 
-	var iDs =new Array();
-	iDs.push(rightColor);
-	for(i=1;i<=5;i++){
-		var newColor=Math.floor((Math.random() * 6) + 1);
-		// alert("firstTime "+newColor);
-		if(containsValue(iDs,newColor)==1){
-			// alert("intra dupa verificare");
-			while(containsValue(iDs,newColor)==1){
-				 newColor=Math.floor((Math.random() * 6) + 1);
-				 // alert("NextTime "+ newColor);
-			}
-			var divId="box-"; divId+=newColor;
-			var div=document.getElementById(divId);
-			div.style.backgroundColor = colors[i];
-			iDs.push(newColor); 
-		}
-		else {
-		var divId="box-"; divId+=newColor;
-		var div=document.getElementById(divId);
-		div.style.backgroundColor = colors[i];
-		iDs.push(newColor); }
 
+	//fiindca intotdeauna 'super-culoarea' este pe prima pozitie din vector, alegem o pozitie random de la 1 la 6 pentru aceasta
+	var poz=Math.floor((Math.random() * 6) + 1);
+	setColor(poz,colors[0]);
+
+	// vector iDs contine pozitiile pe care s-au setat culori
+	var iDs =new Array();
+	iDs.push(poz);
+	for(i=1;i<=5;i++){
+		//se alege o noua pozitie
+		var newPoz=Math.floor((Math.random() * 6) + 1);
+		//daca pozitia se afla in vectorul de pozitii, se genereaza incontinuu alte pozitii pana cand nu se vor intalni in vectorul iDs	
+		if(containsValue(iDs,newPoz)==1){
+			while(containsValue(iDs,newPoz)==1){
+				newPoz=Math.floor((Math.random() * 6) + 1);
+			}
+		}
+		setColor(newPoz,colors[i]);
+		iDs.push(newPoz); 
 	}	
 }
 
+function setColor(id,color){
+	var divId="box-"; divId+=id;
+	var div=document.getElementById(divId);
+	div.style.backgroundColor = color; 
+}
+
+function generateRGB(){
+	var rgb="";
+	rgb+="rgb("
+	for(j=1;j<=3;j++){
+		var c=Math.floor((Math.random() * 255) + 0);
+		rgb+=c;
+		if(j==3)
+			{ rgb+=")";	}
+		else 
+			{ rgb+=",";	}
+	}
+	return rgb;
+}
 
 function containsValue(array,val){
 	var ok=0;
@@ -73,8 +64,6 @@ function containsValue(array,val){
 		}
 	}
 	return ok;
-
-
 }
 function check(id){
 	var rgb=document.getElementById("rgbColor").innerHTML;
@@ -82,37 +71,20 @@ function check(id){
 	string+=id;
 	var boxClicked=document.getElementById(string);
 	var color=boxClicked.style.backgroundColor;
-	// console.log(rgb);
-	// console.log(color);
-	// console.log(color.replace(/ /g,""));
 	if(color.replace(/ /g,"")==rgb.replace(/ /g,"")){
-		// alert("intra");
 		document.getElementById("news").innerHTML="You guessed the color !";
-
+		$("#"+string).css("transform","rotate(45deg)");
 	}
 	else{
 		document.getElementById("news").innerHTML="Try again !";
 		$("#"+string).css("transform","none");
-		//document.getElementById(string).contentEditable=false;
 	}
 	
 }
 function setTransform(){
-	// for(i=1;i<=6;i++){
-	// 	$("#box-"+i).mouseover(function(){
- //  			 $("#box-"+i).css("transform","rotate(45deg)");
-	// 		});
-		
-	// }
-
 for(i=1;i<=6;i++){
-    //$("#box-"+i).hover(function()
-    	//{
-    		console.log("hover",i);
+    	//console.log("hover",i);
         $("#box-"+i).css("transform","");
         $("#box-"+i+":hover").css("transform","rotate(45deg)");
-        
-   // });
-
 	}
 }
