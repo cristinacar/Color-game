@@ -62,7 +62,6 @@ body {
   border: 1px solid #00a79d;
   color: #3c3c3c;
   text-decoration: none;
-  -webkit-transition: all 500ms ease;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   -ms-flex-item-align: center;
