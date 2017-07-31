@@ -27,17 +27,17 @@ have to correctly guess which square matches the RGB value.
 
 ### Third Steps:
 
-	* create a javascript file
+* create a javascript file
 	
-	* create a function that generates and returns string with a random color values (ex: 'rgb(123,211,122)' )
+* create a function that generates and returns string with a random color values (ex: 'rgb(123,211,122)' )
 	
-	* create a function that uses the above function to generate 6 random colors that 
+* create a function that uses the above function to generate 6 random colors that 
 		are saved in a global variable (array)
 	
-	* create a function that picks a random value from that array and saves it into another 
+* create a function that picks a random value from that array and saves it into another 
 		global variable called pickedColor.
 	
-	* create a resetGame function that uses the global variables to set the text in the header 
+* create a resetGame function that uses the global variables to set the text in the header 
 		and the color for each square.
 
 ### Fourth steps:
