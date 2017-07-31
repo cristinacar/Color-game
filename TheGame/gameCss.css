@@ -2,6 +2,7 @@ html,body{
 	margin: 0px;
 	padding: 0px; 
 
+
 }
 
 header{
@@ -40,13 +41,14 @@ h1{
 	padding-right: 300px;
 	align-content: fixed;
 }*/
-
+/* watch flex exemples */
 .mainsection{
+	text-align: center;
 	background-color: darkgrey;
 	border-radius: 50px;
-	width: 600px;
-	height: 500px;
-	margin: 0px 0px 0px 500px;
+	width: 700px;
+	height: 600px;
+	margin: 0px 0px 0px 400px;
 	padding: 100px 150px 0px 150px;
 	text-align: center;
 }
@@ -63,9 +65,15 @@ footer{
     float: left;
     width: 150px;
     height: 150px;
-    margin: 20px;
+    margin: 30px;
     /*box-shadow: 10px 10px grey;*/
     box-shadow: 10px -10px grey;
  }
 
- 
+/* .square:hover{
+ 	background-color: white;
+ 	width: 100px;
+ 	height: 100px;
+ 	margin: 0px;
+ 	padding: 0px;
+ }*/
