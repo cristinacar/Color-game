@@ -1,0 +1,83 @@
+html{
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+header {
+	background-image: url("bg.png");
+	height: 150px;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 150px;  
+}
+strong {
+	font-size: 30px;
+	
+}
+
+nav{
+	height: 50px;
+	background:rgba(3, 211, 194, 0.2);
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;  
+}
+
+main {
+	height:500px;
+	background: rgba(3, 145, 211, 0.1);
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer {
+	height: 30px;
+	background: lightblue;
+	text-align: right;
+	vertical-align: middle;
+	line-height: 30px; 
+}
+
+.rectangle{
+    width:150px;
+    height:150px;
+    background:blue;
+    margin: auto;
+    flex-shrink: 1;
+}
+
+.rectangle1{
+    width:150px;
+    height:150px;
+    background:yellow;
+    margin: auto;
+}
+
+table{
+	margin: auto;
+	border-spacing: 40px;
+
+
+}
+table td {
+	width: 150px;
+	height: 150px;
+	background: lime;
+	border-radius: 30px;
+
+}
+
+button {
+  color: #6496c8;
+  background: rgba(0,0,0,0);
+  border: solid 5px #6496c8;
+}
+button:hover,
+button.hover {
+  border-color: #346392;
+  color: #346392;
+}
+button:active,
+button.active {
+  border-color: #27496d;
+  color: #27496d;
+}
