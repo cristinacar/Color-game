@@ -1,10 +1,9 @@
-		COLOR GAME
+# COLOR GAME
 
 This is a very easy to play Color Game.
 The way you play it is you are given an RGB value, and depending on
 the mode you choose you will be displayed a number of squares. You
 have to correctly guess which square matches the RGB value. 
-
 
 First steps:
 
@@ -43,8 +42,9 @@ Third Steps:
 
 Fourth steps:
 
-	- create a setupSquares function in which we add a click event on each square where you compare the color of the clicked square with the pickedColor
-		 if the color is corect then show the message in the header
+	- create a setupSquares function in which we add a click event on each square where you compare
+		the color of the clicked square with the pickedColor if the color is corect then show 
+		the message in the header
 	
 	- when you press start new game, the resetGame function is called.
 
