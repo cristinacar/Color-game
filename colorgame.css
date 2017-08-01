@@ -1,40 +1,56 @@
 html{
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	height: 100%;
 }
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 header {
 	background-image: url("bg.png");
-	height: 150px;
+	height: 15%;
 	margin: auto;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 150px;  
+	line-height: 150px;
 }
 strong {
 	font-size: 30px;
-	
+	text-transform: uppercase;
+
 }
 
 nav{
-	height: 50px;
+	height: 5%;
 	background:rgba(3, 211, 194, 0.2);
 	text-align: center;
 	vertical-align: middle;
-	line-height: 50px;  
+	line-height: 50px;
 }
 
 main {
-	height:500px;
+	height: 77.5%;
 	background: rgba(3, 145, 211, 0.1);
 	display: flex;
 	flex-wrap: wrap;
 }
 
 footer {
-	height: 30px;
+	height: 2.5%;
 	background: lightblue;
 	text-align: right;
 	vertical-align: middle;
-	line-height: 30px; 
+	line-height: 30px;
+}
+
+
+
+i::before{
+	font-size: 30px;
+	padding: 62px;
 }
 
 .rectangle{
@@ -52,6 +68,8 @@ footer {
     margin: auto;
 }
 
+
+
 table{
 	margin: auto;
 	border-spacing: 40px;
@@ -61,8 +79,22 @@ table{
 table td {
 	width: 150px;
 	height: 150px;
-	background: lime;
 	border-radius: 30px;
+}
+
+table td:hover{
+	width: 150px;
+	height: 150px;
+	border-radius: 30px;
+	opacity: 0.5;
+}
+
+table td:visited{
+	width: 150px;
+	height: 150px;
+	border: 5px solid black;
+	border-radius: 30px;
+	opacity: 0.5;
 
 }
 
