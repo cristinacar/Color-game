@@ -3,19 +3,22 @@
 <head>
 	<title>Color Game </title>
 	<link rel="stylesheet" type="text/css" href="awesome_style.css">
+	<script type="text/javascript" src="javascript.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> <!-- title font-->
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">  <!-- navigation bar font-->
+
 </head>
 <body>
 <div id="background"> </div>
 <div id="container">
 <header>
 	<p><h1 class="title">Color Game<h1><p>
-	<pre id="rgbTitle">rgb(65, 21, 24)</pre>
+	<pre id="rgbTitle">rgb(Wrong)</pre>
+	<p id="gameResult"> </p>
 </header>
 <nav>
 	<div class="btn" id="navContent"> 
-	<a href="#"><button class="navButtons" id="firstButton">Start New Game</button></a>
+	<a href="#"><button class="navButtons" id="startNewGame">Start New Game</button></a>
 	<a href="#"><button class="navButtons">Options</button></a>
 	<a href="#"><button class="navButtons">Meniu</button></a>
 	</div>
@@ -24,12 +27,12 @@
 	<p><h2>Choose a color..</h2> </p>
 	<section class="squareSection">
 		<p>Square section</p>
-		<div class="square" id="firstSquare"> </div>
-		<div class="square" id="secondSquare"> </div>
-		<div class="square" id="thirdSquare"> </div>
-		<div class="square" id="_4thSquare"> </div>
-		<div class="square" id="_5thSquare"> </div>
-		<div class="square" id="_6thSquare"> </div>
+		<div class="square" id="Square0"> </div>
+		<div class="square" id="Square1"> </div>
+		<div class="square" id="Square2"> </div>
+		<div class="square" id="Square3"> </div>
+		<div class="square" id="Square4"> </div>
+		<div class="square" id="Square5"> </div>
 	</section>	
 	<div style="clear:both;"> </div> <!-- pentru float -->
 	

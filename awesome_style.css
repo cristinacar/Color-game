@@ -9,7 +9,7 @@ body{
 #background{
 	background-image: url(bg.jpg);
 	width: 100%;
-	height: 1450px;
+	height: 1400px;
 	opacity: 0.3;
 	position: absolute;
 	background-attachment: fixed;
@@ -125,24 +125,24 @@ main{
 }
 
 
-#firstSquare{
-	background-color: #532966;
+#Square0{
+	background-color: #000;
 }
 
-#secondSquare{
-	background-color: #11205b;
+#Square1{
+	background-color: #000;
 }
-#thirdSquare{
-	background-color: #267746;
+#Square2{
+	background-color: #000;
 }
-#_4thSquare{
-	background-color: #efeb13;
+#Square3{
+	background-color: #000;
 }
-#_5thSquare{
-	background-color: #d61d1d;
+#Square4{
+	background-color: #000;
 }
-#_6thSquare{
-	background-color: #ff7700;
+#Square5{
+	background-color: #000;
 }
 
 
