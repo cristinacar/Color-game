@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<script src="myJsCode1.js"></script>
+	<script>
+	function afiseaza() {
+
+	var i = 0;
+	var myArray = new Array();
+		myArray[0] = "Java";
+		myArray[1] = ".Net";
+		myArray[2] = "JavaScript";
+
+
+	while( i < myArray.length )
+	{
+
+		document.getElementById('paragraf').innerHTML += myArray[i] + "<br >";
+		i++;
+	}
+}
+	</script>
+</head>
+<body>
+
+<form method="GET">
+<input type="text" id="myinput"><br>
+<button id="button">Login</button>
+</form>
+<br>
+<div id="rand"></div>
+<button onclick="myFunction()">Action</button>
+
+<br>
+<button id="buton" onclick="afiseaza()">Paragraf</button>
+<p id="paragraf"></p>
+
+
+</body>
+</html>

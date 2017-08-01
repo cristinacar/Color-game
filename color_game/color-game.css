@@ -71,9 +71,14 @@ button:hover {
 	background-color:white;
 }
 
-#animate {
+#animatie {
 	display: inline-block;
 	width: 20%;
+}
+
+.select {
+	background: steelblue;
+	color: white;
 }
 
 #footer {
