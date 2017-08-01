@@ -84,7 +84,6 @@ function pickColor() {
 } 
 
 
-
 reset.addEventListener('click',function(){
   //stored those 6 random rgb colors in the var colors
   colors = sixColors(number);
@@ -92,12 +91,18 @@ reset.addEventListener('click',function(){
   pickedColor = pickColor();
   //header style is coded again here so that when i click the reset button the last color that was assigned to the header to dissapear
   header.style.background = '#00A69C';
+  
+  
+  
+ 
   //for loop that runs 6 times
   for(var i = 0; i < circles.length; i++){
   //the rgb text in the header will be equal to the picked color 
     rgbText.textContent = pickedColor.style.background;
   //every circle is assigned with a rgb color
     circles[i].style.background = colors[i];
+  //i used this to remove the extra class after his job is done
+    circles[i].classList.remove('slide-out-blurred-top');
     console.log(colors[i]);
   }
 });
@@ -131,7 +136,17 @@ for(var i = 0; i < circles.length; i++){
   //else the h1 will say 'NO"
       correct.textContent = 'NO!';
   //and the color of the circle will 'dissapear'
-      this.style.background = 'white';
+      //this.style.background = 'white';
+  //added some slide out blurred from animista.net
+      this.classList.add('slide-out-blurred-top');
+      
+  //i defined a setTimeout function to automatically remove the key1 class added on keydown
+  //i matched the 500ms value with the transition that i defined for the .color-circle class 
+  /*
+  setTimeout(function(){
+    _this.classList.remove('slide-out-blurred-top');
+  }, 500);
+      */
     }
   });
 }
