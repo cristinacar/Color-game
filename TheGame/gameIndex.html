@@ -8,40 +8,43 @@
     
 <body>
 
-<header>
-        <h1>RGB (num1, num2, num3)</h1>
- </header>
-<section>
-<nav> 
-   	<input type="submit" name="" value="NewGame">
-   </nav>
+<header class="header" id="mainHeader">
+    <h1 id="fisrtHeading"></h1>
+</header>
+
+<div class="navigation"> 
+   	<!-- <input type="button" name="" value="Reset" id="resetButton"> -->
+    <ul class="navigation">
+          <li><a href="#" id="newButton">New Game</a></li>
+          <li><a href="#" id="resetButton">Reset</a></li>
+    </ul>
+</div>
+
 
 <!-- <main> -->
 	<section class="mainsection">
-   			<div class="square">
-   				
-   			</div> 		
-   			<div class="square">
-   				
-   			</div>
-   			<div class="square">
-   				
-   			</div>
 
-   			<div class="square">
-   				
-   			</div> 		
-   			<div class="square">
-   				
-   			</div>
-   			<div class="square">
-   				
-   			</div>
-   		</section>
- </section>
+   			<div class="square" id="square1" onclick="setupSquare(1)"></div>
+
+   			<div class="square" id="square2" onclick="setupSquare(2)"></div>
+
+   			<div class="square" id="square3" onclick="setupSquare(3)"></div>
+        
+   			<div class="square" id="square4" onclick="setupSquare(4)"></div>
+
+   			<div class="square" id="square5" onclick="setupSquare(5)"></div>
+
+   			<div class="square" id="square6" onclick="setupSquare(6)"></div>
+
+   	</section>
 <!-- </main> -->
-<footer>
+
+
+<footer class="footer">
     <p>Version 1</p>
-    </footer>
+</footer>
+
+<script type="text/javascript" src="gameJs.js"></script>
 </body>
+
 </html>
