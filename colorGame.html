@@ -6,27 +6,29 @@
 </head>
 <body>
 	<div id="container">
-		<h1>
-			<span id="target">rgb(153,50,204)</span>
-		</h1>
+		<header>
+			<h1><span id="target"></span></h1>
+			<br>
+			<span id="result"></span>
+		</header>
 		
+		<nav>
+			<button type="button" id="start" onClick="window.location.reload()">Start New Game</button>
+		</nav>
+
 		<main>
-			<section id="newGame">
-				<button id="start">Start New Game</button>
-			</section>
-			<section id="squares">
-				<ul class="colors">
-					<li class="square" id="color1">OLIVE</li>
-					<li class="square" id="color2">PEACHPUFF</li>
-					<li class="square" id="color3">TURQUOISE</li>
-					<br>
-					<li class="square" id="color4">TOMATO</li>
-					<li class="square" id="color5">DIMGRAY</li>
-					<li class="square" id="color6">SIENNA</li>
-				</ul>
-			</section>
+			<ul class="colors">
+				<li class="square"></li>
+				<li class="square"></li>
+				<li class="square"></li>
+				<br>
+				<li class="square"></li>
+				<li class="square"></li>
+				<li class="square"></li>
+			</ul>
 		</main>
-		<footer><h4>Version 1.0</h4></footer>
+		<footer><h4>Version 1.1</h4></footer>
+		<script src="colorGame.js"></script>
 	</div>
 </body>
 </html>

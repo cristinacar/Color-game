@@ -3,18 +3,17 @@ html{
 }
 
 body{
-	font-family: calibri;
+	font-family: lekton,monospace;;
 	width: 70%;
 	margin: 0 auto;
 	background: lavender;
 }
 
-h1{	
+header{	
 	background-color: LIGHTSLATEGREY;
 	border-radius: 30px;
 	padding: 10px;
 	color: lavender;
-	font-family: lekton,monospace;
 	text-align: center;
 }
 
@@ -22,7 +21,7 @@ h1{
 	text-transform: uppercase;
 }
 
-#newGame{
+nav{
 	text-align: center;
 	padding: 5px;
 }
@@ -46,6 +45,11 @@ h1{
   transform: translateY(4px);
 }
 
+#result{
+	font-weight: bold;
+	font-size: 3em;
+}
+
 ul{
 	list-style: none;
 	text-align: center;
@@ -55,7 +59,6 @@ ul{
 li{
 	width: 200px;
 	height: 200px;
-	background: DARKCYAN;
 	color: lavender;
 	font-weight: bold;
 	font-size: 20px;
@@ -70,7 +73,7 @@ li{
 }
 
 li:hover {
-	background-color: teal;
+	opacity: 0.5;
 }
 
 footer{
