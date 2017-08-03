@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var person = {
+      firstName: 'Dan',
+      lastName: 'Constantinescu',
+      getFullName: function(){
+        return this.firstName + ' ' + this.lastName;
+      }
+    };
+    
+    //alert(person.getFullName());
+    
+    var person2 = function(config){
+      var firstName = config.firstName;
+      var lastName = config.lastName;
+      this.getFullName = function(){
+        return firstName + ' ' + lastName;
+      }
+    }
+    var dan = 'DAN';
+    var con = 'CONSTANTINESCU';
+    var newPerson = new person2({
+      firstName: 'ddsada',
+      lastName: 'dsadasdadas',
+    });
+    console.log(newPerson.getFullName());
+    
+    
+    
+    
+  </script>
+</body>
+</html>

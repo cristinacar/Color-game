@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#circle {
+  width: 200px;
+  height: 200px;
+  background: green;
+  border-radius: 60%;
+  position: relative;
+}
+
+
+
+
+
+/* if left is bigger that 90vw then we apply + 200px to the calc */
+/* if top is bigger that 79vh the we apply + 200px to the calc */

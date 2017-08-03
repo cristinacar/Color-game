@@ -1,0 +1,26 @@
+#circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.iii {
+  opacity: 0.4;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin-top: 10px;
+}
+
+.green {
+  width: 400px;
+  height: 400px;
+  background: green;
+  border-radius: 100%;
+}
