@@ -24,3 +24,40 @@
   background: green;
   border-radius: 100%;
 }
+
+.red {
+  width: 400px;
+  height: 400px;
+  background: red;
+  border-radius: 100%;
+}
+
+.blue{
+  width: 400px;
+  height: 400px;
+  background: blue;
+  position: relative;
+}
+
+.yellow {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+}
+
+.yellow-father{
+  width: 500px;
+  height: 500px;
+  background-color: lawngreen;
+}
+
+#magenta {
+  width: 200px;
+  height: 200px;
+  background-color: darkslateblue;
+}
+
+iframe {
+  width: 700px;
+  height: 500px;
+}

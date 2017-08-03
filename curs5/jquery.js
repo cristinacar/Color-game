@@ -17,9 +17,63 @@ $(document).ready(function(){
   */
   
   $('.green').on('click',function(){
-    var p = $('#title').val();
-    var x = p.html('sdadasda');
+    $('#title').html('dadadasdadasda');
+    var d = $('#title').html();
+    alert(d);
+    $('iframe').attr('src','http://aircraft721.space');
+  });
+    
+  $('.red').on('click',function(){
+    $(this).css('display','none');
+  });
+    
+  $('.blue').on('click',function(){
+    $(this).animate({
+      opacity: 0.75,
+      height: '250px'
+    }, 2000, function(){
+      $(this).css({
+        background: 'brown',
+        opacity: 0.25
+      });
+    });
+  });
+  
+  
+  $('.yellow').draggable({
+    containment: 'parent'
+  });
+  
+  $('#magenta').resizable({
+    grid: [50,50]
+  });
+  
+  
+  
+  
+$.get('https://jsonplaceholder.typicode.com/posts/', function(response){
+    //console.log(response);
+    for(var i = 0; i < response.length; i++){
+      //console.log(response[1].title);
+      
+      
+      $('#accordion').append('<h3>' + response[i].title + '</h3>');
+      $('#accordion').append('<div><p>' + response[i].body + '</p></div>');
+      
+      //$('<h3>' + response[i].title + '</h3>').appendTo()
+      
+      
+      
+    }
+    
+    $('#title').html(response.title);
+    $('#content').html(response.body);
     
     
-  })
+    $('#accordion').accordion();
+  });
+
+
+  
+  
 });

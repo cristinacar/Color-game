@@ -33,9 +33,7 @@ circle.addEventListener('click',function(){
   }else {
     diff.textContent = 'Nice job, grandpa! Your reaction is: ' + seconds + ' seconds';
   }
-  //diff.textContent = reactionTime;
   createdTime = Date.now();
 });
 
 
-/*difference between mouse up and mouse down*/
