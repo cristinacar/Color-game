@@ -9,26 +9,14 @@ window.onload = function () {
         this.style.display = 'none';
     });
 
-    var myNumber = 10;
-    var myString = "Some text";
-
-    // alert(myNumber);
-    // alert(myString);
-
+/* ----------------------Adauga un nou paragraf cu textul din input la click peste buton -------------------------
     document.getElementById('textButton').addEventListener('click', function () {
-      // var inputVal = document.getElementById('textInput').value;
-      // alert(inputVal);
-
-      /* Adauga un nou paragraf cu textul din input la click peste buton
-      var newItem = document.createElement("P");       // Create a <p> node
-      var textnode = document.createTextNode(inputVal);  // Create a text node
-      newItem.appendChild(textnode);                    // Append the text to <p>
-
-      var formMy = document.getElementById("myForm");    // Get the <ul> element to insert a new node
-      formMy.insertBefore(newItem); */
+      var inputVal = document.getElementById('textInput').value;
+      alert(inputVal);
+      document.getElementById('paragraf').innerHTML = "<p>" + inputVal + "</p>";
     });
 
-/* ----------------------Operatii cu siruri------------------------- */
+-----------------------------------------------Operatii cu siruri-------------------------------------------------- */
 
     // var myArray = [];
     // myArray[0] = "Primul element";
@@ -59,44 +47,44 @@ window.onload = function () {
   //   alert("x is false");
   // }
 
-  /* ----------------------Operatii cu form------------------------- */
+/* ----------------------Operatii cu form------------------------- */
 
-  document.getElementById('passButton').addEventListener('click', function () {
-    myPassword = "6160084";
-    var inserterPassword = document.getElementById('passInput').value;
-
-    if (inserterPassword == myPassword) {
-      alert('The password is correct!')
-    } else {
-      alert('You dont know the password, get out of here!')
-    }
-  });
+  // document.getElementById('passButton').addEventListener('click', function () {
+  //   myPassword = "6160084";
+  //   var inserterPassword = document.getElementById('passInput').value;
+  //
+  //   if (inserterPassword == myPassword) {
+  //     alert('The password is correct!')
+  //   } else {
+  //     alert('You dont know the password, get out of here!')
+  //   }
+  // });
 
 /* ----------------------Exercitiu------------------------- */
 /* ------------Ghiceste numarul random generat------------- */
 
-  // document.getElementById('startGameBTN').addEventListener('click', function () {
-  //   var insertedNumber = window.prompt("Introduceti numarul");
-  //   var max = 10;
-  //   var randomNumber = Math.floor(Marh.random() * (max + 1));
-  //
-  //   function checkRand() {
-  //     if (insertedNumber == randomNumber) {
-  //       alert("Hurray, You won the Game!");
-  //     } else {
-  //       alert("Game OVER.\nWrong Number, Try Again!");
-  //     }
-  //   };
-  //
-  //   checkRand();
-  // });
+  function checkRand() {
+    var insertedNumber = window.prompt("Introduceti numarul");
+    var max = 10;
+    var randomNumber = Math.floor(Marh.random() * (max + 1));
+
+    if (insertedNumber == randomNumber) {
+      alert("Hurray, You won the Game!");
+    } else {
+      alert("Game OVER.\nWrong Number, Try Again!");
+    }
+  };
+
+  document.getElementById('startGameBTN').addEventListener('click', function () {
+    checkRand();
+  });
 
 /* ----------------------Operatii ciclice------------------------- */
-  var nwArr = ["First", "Second", "Third", "Fourth", "Fifth"];
-
-  for (var i = 0; i < nwArr.length; i++) {
-    document.getElementById("parText").innerHTML += "<br>" + nwArr[i];
-  };
+  // var nwArr = ["First", "Second", "Third", "Fourth", "Fifth"];
+  //
+  // for (var i = 0; i < nwArr.length; i++) {
+  //   document.getElementById("parText").innerHTML += "<br>" + nwArr[i];
+  // };
 
 
 };
