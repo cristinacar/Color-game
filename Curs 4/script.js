@@ -81,10 +81,22 @@ window.onload = function () {
 
 /* ----------------------Operatii ciclice------------------------- */
 
-  var nwArr = ["First", "Second", "Third", "Fourth", "Fifth"];
+  // var nwArr = ["First", "Second", "Third", "Fourth", "Fifth"];
+  //
+  // for (var i = 0; i < nwArr.length; i++) {
+  //   document.getElementById("parText").innerHTML += "<p>" + nwArr[i] + "</p>";
+  // };
 
-  for (var i = 0; i < nwArr.length; i++) {
-    document.getElementById("parText").innerHTML += "<p>" + nwArr[i] + "</p>";
+  /* ---------------------Functie medieAritmetica--------------------- */
+
+  function medieAritmetica(x, y) {
+    return ((x + y) / 2);
   };
+
+  console.log(medieAritmetica(6, 1));
+
+
+
+
 
 };
