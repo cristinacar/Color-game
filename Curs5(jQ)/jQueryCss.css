@@ -1,0 +1,39 @@
+html{
+	padding: 5px;
+}
+
+#circle{
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	border-radius: 50%;
+
+}
+
+.square{
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+}
+
+#circle2{
+	background-color: green;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	border-radius: 50%;
+}
+#circle3{
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	border-radius: 50%;
+}
+
+#container{
+	width: 300px;
+	height: 300px;
+}

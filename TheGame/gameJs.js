@@ -35,39 +35,24 @@
 	 
 	console.log(pickedColor)
 
-	
+	document.getElementById('resetButton').addEventListener("click", fillSqare);
 
-	document.getElementById('resetButton').addEventListener("click", function(){
+	document.getElementById('newButton').addEventListener("click", fillSqare);
 
+	function fillSqare(){
 
-		document.getElementById('mainHeader').innerHTML = pickedColor;
-		document.getElementById('mainHeader').style.background = pickedColor;
+		var string = "square";
+		colors = getColors(numSquares);
+		pickedColor = pickColor(colors);
+		for(var i = 1; i<= colors.length; i++){
+			var squareToFill = document.getElementById(string + i);
+			squareToFill.style.backgroundColor = colors[i]; 
 
-
-		document.getElementById('square1').style.background = colors[0]; 
-		document.getElementById('square2').style.background = colors[1]; 
-		document.getElementById('square3').style.background = colors[2]; 
-		document.getElementById('square4').style.background = colors[3]; 
-		document.getElementById('square5').style.background = colors[4]; 
-		document.getElementById('square6').style.background = colors[5]; 
-
-	});
-
-	document.getElementById('newButton').addEventListener("click", function(){
-
+		}
 
 		document.getElementById('mainHeader').innerHTML = pickedColor;
-		document.getElementById('mainHeader').style.background = pickedColor;
 
-
-		document.getElementById('square1').style.background = colors[0]; 
-		document.getElementById('square2').style.background = colors[1]; 
-		document.getElementById('square3').style.background = colors[2]; 
-		document.getElementById('square4').style.background = colors[3]; 
-		document.getElementById('square5').style.background = colors[4]; 
-		document.getElementById('square6').style.background = colors[5]; 
-
-	});
+	}
 
 	function setupSquare(id) {
 		

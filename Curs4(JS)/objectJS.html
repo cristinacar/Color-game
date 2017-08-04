@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Objets</title>
+</head>
+<body>
+
+	<script>
+
+		function personConstructor(firstName, lastName){
+			// firstName: 'Alex',
+			// lastName: 'Cova',
+
+			getFullName = function() {
+				return this.firstName + ' ' + this.lastName;
+			}
+		};
+
+		//alert(personConstructor.firstName);
+		// console.log(personConstructor);
+
+		var person2 = function(config){
+			var firstName = config.firstName;
+			var lastName = config.lastName;
+
+			this.getFullName = function(){
+				return firstName + ' ' + lastName;
+			}
+		};
+
+		var personObject = new person2(
+		{
+			firstName:'Vlad',
+			lastName:'Petran'
+		}
+			);
+		console.log(personObject.getFullName());
+	</script>
+
+
+</body>
+</html>
