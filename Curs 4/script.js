@@ -63,28 +63,28 @@ window.onload = function () {
 /* ----------------------Exercitiu------------------------- */
 /* ------------Ghiceste numarul random generat------------- */
 
-  function checkRand() {
-    var insertedNumber = window.prompt("Introduceti numarul");
-    var max = 10;
-    var randomNumber = Math.floor(Marh.random() * (max + 1));
-
-    if (insertedNumber == randomNumber) {
-      alert("Hurray, You won the Game!");
-    } else {
-      alert("Game OVER.\nWrong Number, Try Again!");
-    }
-  };
-
-  document.getElementById('startGameBTN').addEventListener('click', function () {
-    checkRand();
-  });
+  // function checkRand() {
+  //   var max = 10;
+  //   var randomNumber = Math.floor(Math.random() * (max + 1));
+  //   var insertedNumber = window.prompt("Introduceti numarul");
+  //
+  //   if (insertedNumber == randomNumber) {
+  //     alert("Hurray, You won the Game!");
+  //   } else {
+  //     alert("Game OVER.\nWrong Number, Try Again!");
+  //   }
+  // };
+  //
+  // document.getElementById('startGameBTN').addEventListener('click', function () {
+  //   checkRand();
+  // });
 
 /* ----------------------Operatii ciclice------------------------- */
-  // var nwArr = ["First", "Second", "Third", "Fourth", "Fifth"];
-  //
-  // for (var i = 0; i < nwArr.length; i++) {
-  //   document.getElementById("parText").innerHTML += "<br>" + nwArr[i];
-  // };
 
+  var nwArr = ["First", "Second", "Third", "Fourth", "Fifth"];
+
+  for (var i = 0; i < nwArr.length; i++) {
+    document.getElementById("parText").innerHTML += "<p>" + nwArr[i] + "</p>";
+  };
 
 };
