@@ -9,9 +9,15 @@ var rgbText = document.getElementById('rgb-text');
 var header = document.querySelector('.header');
 
 
+
 window.addEventListener('keydown',function(e){
   //store the keycode for the following keys (q,w,e,a,s,d) in the key_circle variable
   var key_circle = document.querySelector("div[data-key='" + e.keyCode + "']");
+  
+  var enter = document.querySelector("a[data-key='" + e.keyCode + "']");
+  console.log(enter);
+  
+  //console.log(enter);
   //add the key1 class to the variable key_circle 
   key_circle.classList.add('key1');
   //i defined a setTimeout function to automatically remove the key1 class added on keydown
@@ -40,6 +46,8 @@ window.addEventListener('keydown',function(e){
     key_circle.style.background = 'white';
   }
 });
+
+
 
 
 
@@ -103,7 +111,7 @@ reset.addEventListener('click',function(){
     circles[i].style.background = colors[i];
   //i used this to remove the extra class after his job is done
     circles[i].classList.remove('slide-out-blurred-top');
-    console.log(colors[i]);
+   // console.log(colors[i]);
   }
 });
 
