@@ -6,7 +6,6 @@ body{
 header{
 	width: 100%
 	height:100%;
-	/*background-color: #ac8371;*/
 	background: linear-gradient(to right, #1e130c, #9a8478);
 	color: white;
 	margin-left: auto;
@@ -20,10 +19,10 @@ h1{
 	padding: 0;
 }
 nav{
-	text-align: center;
 	background: white;
 	height:50px;
 	background-color: #ac8371;
+	margin-bottom: 15px;
 }
 button{
 	height: 35px;
@@ -31,7 +30,10 @@ button{
 	margin: 10px;
 	font-family: 'Neucha', cursive;
 	font-size: 20px;
-	background-color: #3f0000;;
+	background-color: #3f0000;
+}
+.right{
+	float: right;
 }
 .actionButton{
 	padding: 3px 20px;
@@ -42,22 +44,12 @@ button{
 	background-color: #ac8371;
   	color: white;
 }
-/*#startgame{
-	padding: 3px 20px;
-  	border: 20px;
-  	border: 10px;
-}
-#startgame:hover{
-	background-color: #ac8371;
-  	color: white;*/
-}
 #rgb{
 	font-family: "Bellefair";
 }
 .container {
  	max-width: 600px;
   	margin: 0 auto;
-  	margin-top: 20px;
 }
 .patrat{
 	width:30%;

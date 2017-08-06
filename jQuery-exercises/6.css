@@ -1,0 +1,50 @@
+
+#circle{
+background-color: green;
+width: 100px;
+    height: 100px;
+    margin: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+#anotherCircle{
+background-color: darkgreen;
+width: 100px;
+    height: 100px;
+    margin: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+#blueCircle{
+  background: blue;
+  width: 100px;
+    height: 100px;
+    margin: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.square{
+  background-color: red;
+  width: 100px;
+    height: 100px;
+    margin: 10px;
+};
+#secondContainer{
+  width: 200px;
+  height: 300px;
+}
+#patratColorat{
+  background-color: magenta;
+}
+#reactionCircle{
+  background: black;
+  width: 100px;
+    height: 100px;
+    margin: 10px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
