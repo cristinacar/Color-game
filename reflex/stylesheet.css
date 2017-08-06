@@ -1,0 +1,45 @@
+body{
+	background: #2F4F4F;
+}
+
+#circle {
+	position: absolute;
+	border-radius: 50%;
+	margin-top: 100px;
+}
+h1{
+	text-align: center;
+	font-family: 'Lobster Two', cursive;
+}
+
+h4{
+	text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+#start{
+	position: absolute;
+	left: 200px;
+	text-decoration: none;
+	border-radius: 50%;
+	height: 40px;
+	background: #6A5ACD;
+}
+#reset{
+	position: absolute;
+	left: 600px;
+	border-radius: 50%;
+	height: 40px;
+	background: #CD5C5C;
+}
+#result{
+
+}
+.container{
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-left: 200px; 
+	width: 900px;
+	height: 700px;
+	background: #F5F5DC;
+}
