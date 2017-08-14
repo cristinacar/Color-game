@@ -57,9 +57,7 @@ i::before{
     width:150px;
     height:150px;
     background:blue;
-    margin: auto;
-    flex-shrink: 1;
-}
+    margin: auto}
 
 .rectangle1{
     width:150px;
@@ -99,17 +97,16 @@ table td:visited{
 }
 
 button {
-  color: #6496c8;
-  background: rgba(0,0,0,0);
+  color: black;
+  background: #6496c8;
   border: solid 5px #6496c8;
+	border-radius: 20px;
 }
 button:hover,
 button.hover {
-  border-color: #346392;
   color: #346392;
 }
 button:active,
 button.active {
-  border-color: #27496d;
   color: #27496d;
 }

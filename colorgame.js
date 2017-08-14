@@ -37,6 +37,7 @@ window.onload = function (){
 
 
   function valid() {
+
     this.style.opacity = 0.5;
     var bg = this.style.background;
     console.log(bg + " " + r);
