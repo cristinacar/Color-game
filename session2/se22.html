@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Other input types</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Choose a fruit</legend>
+			<label>Apple</label>
+				<input type="checkbox" name="fruit" value="apple">
+			<label>Orange</label>
+				<input type="checkbox" name="fruit" value="orange">
+		</fieldset>
+
+		<select>
+			<option>Value1</option>
+			<option>Value2</option>
+			<option>Value3</option>
+		</select>
+
+		<input type="text" id="in1" list="list1">
+		<datalist id="list1" pattern="[Bb]anana|Apple|Cherry" name="anotherFruit">
+			<option>Apple</option>
+			<option>Banana</option>
+			<option>Cherry</option>
+		</datalist>
+
+		<textarea rows="5" cols="20" name="longText" minlength="5" maxlength="7">
+			
+		</textarea>
+
+		<input type="submit" name="">
+	</form>
+</body>
+</html>
