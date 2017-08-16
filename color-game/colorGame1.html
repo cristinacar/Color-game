@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="colorGame1.js"></script>
 	 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 </head>
-<body onload="loadColors()">
+<body onload="loadColors(3,6)">
 <header >
 	<h1 class="rainbow" id="colorGame">Color game</h1>
 	<h1 id="rgbColor">RGB(100,250,34)</h1>
@@ -14,15 +14,15 @@
 </header>
 <div id="middle-content">
 	<section id="sectionForActions">
-		<input type="button" name="buttonStartNewGame" value="Start new game" id="buttonStartNewGame" onclick="loadColors()">
+		<input type="button" name="buttonStartNewGame" value="Start new game" id="buttonStartNewGame" onclick="loadColors(3,6)">
 	</section>
 	<section id="sectionForColors">
-			<div id="box-1" class="box" name="box0"  onclick="check(1)" ></div>
+		<!-- 	<div id="box-1" class="box" name="box0"  onclick="check(1)" ></div>
 			<div id="box-2" class="box" name="box1"  onclick="check(2)" ></div>
 			<div id="box-3" class="box" name="box2"  onclick="check(3)" ></div>
 			<div id="box-4" class="box" name="box3"  onclick="check(4)" ></div>
 			<div id="box-5" class="box" name="box4"  onclick="check(5)" ></div>
-			<div id="box-6" class="box" name="box5"  onclick="check(6)" ></div>
+			<div id="box-6" class="box" name="box5"  onclick="check(6)" ></div>	 -->		
 	</section>
 </div>
 
