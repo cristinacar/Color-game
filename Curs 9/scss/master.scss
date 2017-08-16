@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "mixins";
+
+body{
+  width: 80%;
+  margin: 0 auto;
+  border-left: 5px solid rgb(133, 178, 255);
+  font-family: 'Roboto', sans-serif;
+
+  h1{
+    font-size: 72px;
+    font-weight: bold;
+  }
+
+  p{
+    padding: 0 10px 0 10px;
+    text-align: justify;
+  }
+
+  p::first-letter{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    padding: 5px;
+  }
+}
+
+h1.mainHeader{
+  text-align: center;
+  padding: 15px;
+}
+
+div.col-lg{
+  border-top: 5px solid rgb(3, 201, 53);
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+div.col-md{
+  border-top: 5px solid rgb(197, 201, 3);
+  border-right: 1px solid rgb(0, 0, 0);
+}
