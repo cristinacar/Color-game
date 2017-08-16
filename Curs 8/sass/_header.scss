@@ -1,0 +1,24 @@
+nav#navigation ul.menu{
+  list-style-type: none;
+  width: 50%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-around;
+
+  li{
+    line-height: 2;
+    margin-right: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  li a:hover{
+    transition: all ease-in-out 0.5s;
+    color: limegreen;
+  }
+}

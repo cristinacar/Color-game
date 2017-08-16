@@ -1,0 +1,106 @@
+$gradientStart: rgb(90, 115, 175);
+$gradientEnd: rgb(63, 76, 107);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "header";
+
+@mixin backgroundGradient($firstColor, $secondColor) {
+  background: -webkit-linear-gradient($firstColor 0%, $secondColor 100%);
+  background: -o-linear-gradient($firstColor 0%, $secondColor 100%);
+  background: linear-gradient($firstColor 0%, $secondColor 100%);
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  @include backgroundGradient($gradientStart, $gradientEnd);
+
+  p{
+    text-align: justify;
+    padding: 15px;
+    font-size: 15px;
+  }
+}
+
+h1{
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+div.wrapper{
+  width: 70%;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px black;
+  padding: 10px;
+}
+
+footer#footer{
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+div.flexContainer {
+  display: flex;
+  justify-content: space-around;
+
+  p{
+    text-align: justify;
+    padding: 15px;
+  }
+}
+
+div.flexBoxes h4 {
+  text-align: center;
+  font-size: 36px;
+}
+
+table#mainTable{
+  border: 1px solid black;
+  margin: 0 auto;
+  background: linear-gradient(grey 0%, black 100%);
+  color: limegreen;
+  box-shadow: 1px 1px 10px black;
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+
+  tr, td{
+    padding: 10px;
+  }
+
+  td:hover{
+    transform: scale(1.2);
+    text-shadow: 1px 1px 1px black;
+  }
+
+  tr:nth-of-type(2){
+    color: aqua;
+    background-color: grey;
+    text-align: right;
+
+    td:nth-of-type(4){
+      color: orange;
+    }
+  }
+
+  tr:nth-of-type(4){
+    color: yellow;
+    background-color: Chocolate;
+    text-align: left;
+  }
+}
+
+button.testButton{
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  font-size: 24px;
+
+  &:hover{
+    box-shadow: 1px 1px 5px black;
+    color: DarkSlateGrey;
+  }
+}
