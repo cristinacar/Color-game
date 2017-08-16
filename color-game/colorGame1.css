@@ -2,12 +2,10 @@ header{
 	background-color: #b2b2b2;
 	width:100%;
 	text-align: center;
-	/*margin-bottom: 0px;*/
 }
 #rgbColor{
 	font-family: "Courier New", Courier, monospace;
 	color: #f4e1d2;
-	/*background: linear-gradient(30deg,#b2b2b2 ,#f4e1d2 );*/
 }
 #colorGame{
 	font-family: "Courier New", Courier, monospace;
@@ -30,14 +28,11 @@ header{
 
 #buttonStartNewGame{
 	height: 60%;
-	/*width: 18%;*/
 	width: auto;
-	/*background:  #f7cac9;*/
 	border:2px solid grey;
 	border-radius: 20px;
 }
 #sectionForColors{
-	/*background:  #f7cac9;*/
 	width: 50%;
 	height: 50%;
 	margin-left: 30%;
@@ -50,18 +45,15 @@ header{
   display: inline-block;
   margin-right: 30px;
   margin-top: 30px;
- /* float: left;*/
 }
 .box:hover{
 	transform: rotate(45deg);
 }
 #sectionFooter{
 	background: linear-gradient( #f4e1d2 50%,#b2b2b2 50%);
-	/*background-color: #f18973;*/
 	text-align: center;
 	width: 100%;
 	height: 60px;
-	/*display: block;*/
 	margin-top: 50px;
 	position: relative;
 	padding-top: 10px;
