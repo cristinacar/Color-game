@@ -1,0 +1,38 @@
+extends ../default
+
+block content
+
+  include ../templates/nav
+
+
+  div(class=['ui container grid stackable'])
+    div(class=['sixteen','wide','column'])
+
+        h2(class=['ui','header','blue','dividing'])= 'List of products'
+
+        table(class=['ui','table','celled'] id='tbl-products')
+          thead
+            tr
+              th= 'ID'
+              th= 'Name'
+              th= 'Price'
+              th= 'Stock'
+              th= 'Date created'
+              th(id='center-th')= 'Actions'
+
+          tbody
+            each product in products
+              tr(class='tr2')
+                td(id='product_id')= product.product_id
+                td= product.product_name
+                td= product.price
+                td= product.stock
+                td= product.date_created
+                td(class='tedeus')
+                  a(class=['ui button basic icon'] href='#' data-tooltip='Delete' data-inverted='' data-position='top center' id='btn-delete')
+                    i(class=['trash icon'])
+                  
+                  a(class=['ui button basic icon'] href='http://localhost:3000/updateproducts/'+product.product_id data-tooltip='Update' data-inverted='' data-position='top center')
+                    i(class=['cut icon'])
+
+  script(src='/javascripts/products.js')

@@ -1,0 +1,36 @@
+extends ../default
+block content
+
+  include ../templates/nav
+
+
+  div(class=['ui','container','grid','stackable'])
+    div(class=['sixteen','wide','column'])
+
+        h2(class=['ui','header','blue','dividing'])= 'Update products'
+
+        div(class='form-newproduct')
+            form(class=['ui','form'] action='http://localhost:3000/edit' method='post')
+
+                div(class=['ui','field'])
+                    label(for='product_name')= 'Name of the product'
+                    input(type='text' name='product_name' placeholder='Enter name of the product' value=product[0].product_name)
+
+                div(class=['ui','two','fields'])
+
+                    div(class=['ui','field'])
+                        label(for='price')= 'Price'
+                        input(type='text' name='price' placeholder='Enter price' value=product[0].price)
+
+                    div(class=['ui','field'])
+                        label(for='stock')= 'Stock'
+                        input(type='text' name='stock' placeholder='Enter the stock' value=product[0].stock)
+                        input(type='hidden' name='product_id' value=product[0].product_id)
+
+                button(class=['ui','button','basic','black'])= 'Update Product'
+
+                div(class=['ui','message','error'])
+        
+           
+
+    script(src='/javascripts/validation.js')
